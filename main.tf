@@ -4,7 +4,6 @@ data "aws_availability_zones" "example" {
     values = ["opt-in-not-required"]
   }
 }
-
 resource "aws_vpc" "mainvpc" {
   cidr_block = var.vpc_cidr_addr
   instance_tenancy = var.instance_tenancy
@@ -15,8 +14,6 @@ resource "aws_vpc" "mainvpc" {
   assign_generated_ipv6_cidr_block = var.assign_generated_ipv6_cidr_block
   tags = var.vpc_tags
 }
-
-
 resource "aws_subnet" "public" {
   depends_on = [aws_vpc.mainvpc]
   vpc_id     = aws_vpc.mainvpc.id
@@ -27,7 +24,6 @@ resource "aws_subnet" "public" {
     Name = "${aws_vpc.mainvpc.id}-PublicSubnet-${count.index}"
   }
 }
-
 resource "aws_subnet" "private" {
   depends_on = [aws_vpc.mainvpc]
   vpc_id     = aws_vpc.mainvpc.id
