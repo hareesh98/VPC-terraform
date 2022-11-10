@@ -1,7 +1,7 @@
 access_key = "" # Access key
 secret_access_key = "" # Secret access key
 region = "us-east-1"
-vpc_cidr_addr = "10.0.0.0/26"
+vpc_cidr_addr = "10.0.0.0/16"
 public_subnets = [ "10.0.0.0/24", "10.0.2.0/24" ]
 private_subnets = [ "10.0.1.0/24", "10.0.3.0/24" ]
 security_groups = {
