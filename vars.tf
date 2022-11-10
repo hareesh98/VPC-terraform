@@ -10,13 +10,12 @@ variable "secret_access_key" {
 variable "region" {
   description = "aws region"
   type        = string
-  default     = "ap-south-1"
+  default     = "us-east-1"
 }
 
 variable "vpc_cidr_addr" {
   description = "VPC CIDR Block"
   type        = string
-  default     = "10.1.0.0/26"
 }
 
 variable "instance_tenancy" {
@@ -57,7 +56,7 @@ variable "assign_generated_ipv6_cidr_block" {
 
 variable "vpc_tags" {
   default     = {
-     Name = "Testvpc"
+     Name = "vpc for testing"
 }
   description = "Default Tags for VPC"
   type        = map(string)
