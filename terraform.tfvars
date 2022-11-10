@@ -1,5 +1,5 @@
-access_key = "AKIAVPMU7LCWQCDLCG5P" # Access key
-secret_access_key = "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" # Secret access key
+access_key = "" # Access key
+secret_access_key = "" # Secret access key
 region = "ap-south-1"
 vpc_cidr_addr = "10.0.5.0/26"
 public_subnets = [ "10.0.6.0/28", "10.0.9.16/28" ]
