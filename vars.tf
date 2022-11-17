@@ -10,7 +10,7 @@ variable "secret_access_key" {
 variable "region" {
   description = "aws region"
   type        = string
-  default     = "us-east-1"
+  default     = "ap-south-1"
 }
 
 variable "vpc_cidr_addr" {
